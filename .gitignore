@@ -1,0 +1,12 @@
+# PHP
+includes/env.php
+
+# Python
+chatbot/.env
+chatbot/.venv/
+chatbot/__pycache__/
+chatbot/checkpoint.db
+
+# OS
+.DS_Store
+Thumbs.db
