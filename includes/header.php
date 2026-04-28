@@ -40,6 +40,20 @@ if ($user) {
   <?php foreach ($extra_css as $css): ?>
   <link rel="stylesheet" href="/ielts_beta_v3/assets/css/<?= htmlspecialchars($css) ?>?v=1.4">
   <?php endforeach; ?>
+
+  <script>
+  // Firebase Config from PHP (env.php)
+  window.firebaseConfig = {
+    apiKey: "<?= defined('FIREBASE_API_KEY') ? FIREBASE_API_KEY : '' ?>",
+    authDomain: "<?= defined('FIREBASE_AUTH_DOMAIN') ? FIREBASE_AUTH_DOMAIN : '' ?>",
+    projectId: "<?= defined('FIREBASE_PROJECT_ID') ? FIREBASE_PROJECT_ID : '' ?>",
+    appId: "<?= defined('FIREBASE_APP_ID') ? FIREBASE_APP_ID : '' ?>",
+    // Optional fields if you have them in env.php
+    storageBucket: "<?= defined('FIREBASE_STORAGE_BUCKET') ? FIREBASE_STORAGE_BUCKET : '' ?>",
+    messagingSenderId: "<?= defined('FIREBASE_MESSAGING_SENDER_ID') ? FIREBASE_MESSAGING_SENDER_ID : '' ?>",
+    measurementId: "<?= defined('FIREBASE_MEASUREMENT_ID') ? FIREBASE_MEASUREMENT_ID : '' ?>"
+  };
+</script>
 </head>
 <body class="<?= htmlspecialchars($body_class) ?>">
 <div id="toast-container"></div>
