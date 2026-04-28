@@ -19,7 +19,13 @@ require_once '../includes/config.php';
     <div class="divider">or with email</div>
 
     <div class="fg"><label class="fl">Email address</label><input class="fi" type="email" id="email" placeholder="you@email.com" autocomplete="email"></div>
-    <div class="fg"><label class="fl">Password</label><input class="fi" type="password" id="password" placeholder="••••••••" autocomplete="current-password"></div>
+    <div class="fg">
+    <label class="fl">Password</label>
+    <div class="pw-wrap">
+        <input class="fi" type="password" id="password" placeholder="••••••••" autocomplete="current-password">
+        <button class="pw-toggle" onclick="togglePassword(this, 'password')">🔒</button>
+    </div>
+  </div>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
       <label style="font-size:13px;color:var(--text2);display:flex;align-items:center;gap:6px;cursor:pointer;"><input type="checkbox" id="remember" style="accent-color:var(--teal);"> Remember me</label>
       <a class="alink" style="font-size:13px;cursor:pointer;" onclick="forgotPassword()">Forgot password?</a>

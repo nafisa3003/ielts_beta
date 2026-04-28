@@ -23,7 +23,10 @@ require_once '../includes/header.php';
     <div class="fg"><label class="fl">Email address</label><input class="fi" type="email" id="email" placeholder="you@email.com"></div>
     <div class="fg">
       <label class="fl">Password</label>
-      <input class="fi" type="password" id="password" placeholder="Create a strong password" oninput="checkPwStrength(this.value)">
+      <div class="pw-wrap">
+    <input class="fi" type="password" id="password" placeholder="Create a strong password" oninput="checkPwStrength(this.value)">
+    <button class="pw-toggle" onclick="togglePassword(this, 'password')">🔒</button>
+</div>
       <div class="pw-strength"><div class="pw-bar" id="pw1"></div><div class="pw-bar" id="pw2"></div><div class="pw-bar" id="pw3"></div></div>
       <div class="pw-label" id="pw-label">Enter a password</div>
     </div>

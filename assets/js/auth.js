@@ -17,6 +17,15 @@ function setLoading(on) {
   document.querySelectorAll('button').forEach(b => b.disabled = on);
 }
 
+/* ── PASSWORD TOGGLE ───────────────────────── */
+function togglePassword(btn, id) {
+  const input = document.getElementById(id);
+  if (!input) return;
+  const isHide = input.type === 'password';
+  input.type = isHide ? 'text' : 'password';
+  btn.textContent = isHide ? '👁️' : '🔒';
+}
+
 /* ── GOOGLE OAUTH (Firebase) ────────────────── */
 async function firebaseGoogle() {
   clearError();
