@@ -55,10 +55,10 @@ Chat with our intelligent tutor.
 - **Live Search:** Ask about "Latest test fees in my city" or "Next test dates" — the AI searches the web for you!
 
 ### **Vocabulary Word Bank (Flashcards)**
-![Flashcards Page 1](./screenshots/flashcards1.png)
-![Flashcards Page 2](./screenshots/flashcards2.png)
-![Flashcards Page 3](./screenshots/flashcards3.png)
-![Flashcards Page 4](./screenshots/flashcards4.png)
+![Flashcards Page 1](./screenshots/flashcard1.png)
+![Flashcards Page 2](./screenshots/flashcard2.png)
+![Flashcards Page 3](./screenshots/flashcard3.png)
+![Flashcards Page 4](./screenshots/flashcard4.png)
 Master over 180+ academic words. 
 - **3D Interactive Cards:** Click to flip and see definitions & examples. Categorized with 3 difficulty levels (EASY-MEDIUM-HARD) and ordered alphabetically, with a ‘Search words’ bar and pagination. 
 - **Create Your Own:** Create, Read, Update, Delete (CRUD) custom words you encounter during your reading.
